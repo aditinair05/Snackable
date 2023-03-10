@@ -1,0 +1,148 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="hero-wrap hero-bread" style="background-image: url({% static 'images/bg_1.jpg' %});">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Wishlist</span></p>
+            <h1 class="mb-0 bread">My Wishlist</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-cart">
+			<div class="container">
+				<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="cart-list">
+	    				<table class="table">
+						    <thead class="thead-primary">
+						      <tr class="text-center">
+						        <th>&nbsp;</th>
+						        <th>Product List</th>
+						        <th>&nbsp;</th>
+						        <th>Price</th>
+						        <th>Quantity</th>
+						        <th>Total</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url({% static 'images/product-1.jpg' %});"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>RED VELVET COOKIES</h3>
+						        	<p>Red Velvet, your favorite dessert flavor, is now available as a cookie. If you've ever found yourself halfway through a bag of cookies feeling guilty about the amount of sugar you're consuming, then you're in for a treat. Our delectable cookies are sweetened with jaggery rather than refined sugar. These delightful cookies are made with whole wheat flour and oats and have a delectable red velvet flavor that is difficult to resist. Baked to be perfectly crunchy, these cookies are the healthier way to satisfy your craving for something sweet.</p>
+						        </td>
+						        
+						        <td class="price">Rs.49</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">Rs.49</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url({% static 'images/product-2.jpg' %});"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>
+										BAKED PIZZA STICKS WITH CHEESY JALAPEÑO DIP</h3>
+						        	<p>These baked and crunchy wheat flour sticks are sprinkled with a light chilly-garlic-pizza flavor to satisfy your pizza cravings and come with their very own companion - cheesy jalapeño dip!</p>
+						        </td>
+						        
+						        <td class="price">Rs.70</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">Rs.70</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url({% static 'images/product-3.jpg' %});"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>NACHO CHEESE JOWAR PUFFS</h3>
+						        	<p>Fiber-rich and Gluten-free, get ready to replace your basic cheese puffs with Snackible's Nacho Cheese Jowar Puffs and binge on them guilt-free.</p>
+						        </td>
+						        
+						        <td class="price">Rs.59</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">Rs.59</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url({% static 'images/product-4.jpg' %});"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>CHEDDAR CHEESE MAKHANA</h3>
+						        	<p>Back by popular demand: Roasted to perfection, our Cheddar Cheese Makhana is a snack that is jain and a delicious source of protein. This snack just shouts out, “Move over popcorn!” </p>
+						        </td>
+						        
+						        <td class="price">Rs.60</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">Rs.60</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url({% static 'images/product-5.jpg' %});"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>JALAPENO RAGI CHIPS</h3>
+						        	<p>If you are looking for that perfect accompaniment to that movie night with your salsa or sour cream dip, then you’ve found the one in these jalapeño ragi chips. Packed with a high fiber crunch,these jalapeño ragi chips are sure to give you that extra crunchy bite.</p>
+						        </td>
+						        
+						        <td class="price">Rs.89</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">Rs.89</td>
+						      </tr><!-- END TR-->
+
+						      
+						    </tbody>
+						  </table>
+					  </div>
+    			</div>
+    		</div>
+			</div>
+		</section>
+{% endblock %}
